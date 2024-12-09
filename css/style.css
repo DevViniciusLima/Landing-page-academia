@@ -1,0 +1,443 @@
+/*declaração de variáveis*/
+:root{
+    --dark: #101417;
+    --primary: #B91F33;
+    --primary-dark: #811422;
+    --primary-light: #e0253e;
+    --contrast: #E0E34C;
+    --light: #E1E1E1;
+    --medium: #666666;
+    --radius: 3px;
+
+}
+
+/*seletor ALL*/
+
+*{
+    font-family: "Teko", sans-serif;
+    text-transform: uppercase; /*aplicando maiúsculo para todo o site*/
+}
+
+html{
+    scroll-behavior:smooth ;
+}
+
+body{
+    background-color: var(--dark) ;
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+h2{
+    color: #FFFFFF;
+    font-size: 40px;
+}
+
+p{
+    color: var(--light);
+    font-size: 18px;
+    line-height: 120%;
+}
+
+a{
+    text-decoration: none; /*retirando o sublinhado de TODOS os links do site*/
+}
+
+img{
+    display: block;
+}
+
+/*Posicionamento da navegação*/
+#academia, #contato{
+    scroll-margin-top: 200px;
+}
+
+#planos{
+    scroll-margin-top: 99px;
+}
+
+/***********************SLIDER*******************************/
+
+
+.bx-wrapper{
+    border: none;
+    box-shadow: none;
+}
+
+.bx-wrapper .bxpager .bx-default-pager a{
+    background-color: var(--light);
+}
+
+.bx-wrapper .bxpager .bx-default-pager a.active{
+    background-color: var(--primary);
+}
+
+
+
+/***********************SLIDER*******************************/
+
+
+.header{
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    padding-top: 16px;
+    padding-bottom: 16px;
+    position: fixed;
+    z-index: 1000;
+}
+
+/*formatando o container que está dentro do header*/
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto; /*centralizando o container*/
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.menu a{
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 700; /*negrito*/
+    margin-left: 111px;
+
+}
+
+.menu a:hover{
+    color: var(--contrast);
+}
+
+.bg-1{
+    background-image: url(../img/background.jpg);
+}
+
+.bg-2{
+    background-image: url(../img/background-2.jpg);
+
+}
+
+.hero-section{
+    width: 100%;
+    height: 650px;
+    background-size: cover;
+    background-position: left bottom ;
+
+    display: flex;
+    align-items: center;
+}
+
+.hero-section .container{
+    position: relative; /*posição em relação a ele mesmo*/
+    top: 52px;
+}
+
+.hero-section h1{
+    color: var(--light);
+    font-size: 96px;
+    line-height: 90%;
+
+}
+
+.hero-section p{
+    max-width: 780px;
+    font-size: 24px;
+    color: var(--light);
+    line-height: 120%;
+
+}
+
+.btn{
+    color: #FFFFFF;
+    background-color: var(--primary);
+    padding: 13px 60px 9px 60px; /*top right bottom left*/
+    border-radius: var(--radius);
+    border: 2px solid transparent;
+    display: inline-block;
+    font-size: 18px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: var(--primary-light);
+    /* transform: scale(1.05); */
+    transform: translateY(-5px);
+
+}
+
+.btn-outline{
+    border: 2px solid var(--primary);
+    background-color: transparent;
+}
+
+.academia{
+    display: flex;
+    align-items: center;
+    column-gap: 24px; /*espaço entre as colunas do flex*/
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+}
+
+.faca-parte{
+    background-color: var(--light);
+}
+
+.faca-parte .content{
+    max-width: 850px;
+}
+
+.faca-parte h2{
+    color: var(--dark);
+}
+
+.faca-parte p{
+    color: var(--medium);
+    margin: 0;
+}
+
+.faca-parte .container{
+    position: relative; /*para que o position absolute da imagem use este container como referência*/
+    padding-top: 37px;
+    padding-bottom: 37px;
+}
+
+.faca-parte .image{
+    /*posição em relação ao elemento PAI )desde que este tenha position, caso contrário será ao body)*/
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.planos{
+    background-image: url(../img/corredora.jpg);
+    background-size: cover;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.flex-cards{
+    display: flex ;
+    column-gap: 24px;
+}
+
+.card{
+    border: solid 1px var(--light);
+    border-radius: var(--radius);
+    padding: 30px 25px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.card h3{
+    color: #FFFFFF;
+    font-size: 32px;
+}
+
+.price{
+    color: #FFFFFF;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.card ul{
+    color: var(--light);
+    text-align: left;
+    font-size: 18px;
+    padding: 0;
+    list-style-position: inside;
+}
+
+.card p{
+    margin-top: 5px;
+}
+
+.card .btn{
+    /*width: 100%;
+    box-sizing: border-box;*/ /*faz com que as dimensões (largura/altura) não sejam alteradas por conta do padding.*/
+    display: block;
+}
+
+.destaque{
+    border: 3px solid var(--primary);
+    padding-top: 28px;
+}
+
+.destaque .price{
+    color: var(--contrast);
+}
+
+.fale-conosco{
+    display: flex;
+    column-gap: 24px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.fale-conosco input, .fale-conosco textarea{
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    border: solid 1px var(--light);
+    border-radius: var(--radius);
+    padding: 10px;
+    box-sizing: border-box; /*faz com que o padding e border não aumentem as dimensões*/
+    margin-bottom: 10px;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+.fale-conosco textarea{
+    height: 140px;
+}
+
+.footer{
+    background-color: var(--primary);
+    padding: 14px 194px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.footer p{
+    margin: 0;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+    margin-bottom: 100px;
+}
+
+@media (max-width: 1200px){
+
+    h2{
+        font-size: 32px;
+    }
+
+    .menu{
+        /*display: none;*/
+        background-color: var(--primary-dark);
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 100px;
+        height: 100vh;
+        transform: translateX(-100%);
+        transition: 0.5s;
+    }
+
+    .menu-open{
+        /*display: block;*/
+        transform: translateX(0);
+    }
+
+    .menu a{
+        display: block;
+        margin: 0;
+        border-bottom: 1px solid var(--light);
+        padding: 30px 15px;
+    }
+
+    .menu a:active{
+        background-color: var(--dark);
+    }
+
+    .bar{
+        width: 40px;
+        height: 3px;
+        background-color: #FFFFFF;
+        margin-bottom: 3px;
+        transition: 0.3s;
+    }
+
+    /*Formatando as barras quando o menu estiver aberto*/
+    .x .bar:first-child{
+        transform: rotate(45deg) translate(6px);
+        transition-delay: 0.3s;
+    }
+
+    .x .bar:nth-child(2){
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+
+    .x .bar:last-child{
+        transform: rotate(-45deg) translate(8px, -3px);
+        transition-delay: 0.3s;
+    }
+
+    .hero-section{
+        height: 520px;
+    }
+
+    .hero-section h1{
+        font-size: 36px;
+    }
+
+    .hero-section p{
+        font-size: 20px;
+    }
+
+    .academia{
+        flex-direction: column;
+    }
+
+    .academia img{
+        max-width: 100%; /*a imagem vai ter no máximo seu próprio tamanho*/
+    }
+
+    .faca-parte .content{
+        width: calc(100% - 200px);
+    }
+
+    .planos{
+        background-position: center;
+    }
+
+    .flex-cards{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 24px;
+    }
+
+    .card{
+        max-width: 450px;
+    }
+
+    .fale-conosco{
+        flex-direction: column;
+        row-gap: 24px;
+    }
+
+    iframe{
+        width: 100%;
+    }
+
+    .footer{
+        padding: 20px;
+    }
+
+}
+
+
+@media (max-width: 600px){
+
+    .faca-parte .image{
+        display: none;
+    }
+
+    .faca-parte .content{
+        width: 100%;
+    }
+}

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HardCore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $(".slider").bxSlider({
+            auto: true,
+            mode: 'horizontal',
+            pause: 4000,
+            autoHover: true,
+            randomStart: true,
+            speed: 1000,
+            controls: false
+        });
+      });
+    </script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="header">
+        
+        <div  class="container">
+
+            <div class="logo">
+                <img src="img/logo.svg" alt="">
+            </div>
+
+            <div class="btn-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+
+            <div class="menu">
+                <a href="#">Início</a>
+                <a href="#academia">Nossa Academia</a>
+                <a href="#planos">Planos</a>
+                <a href="#contato">Fale Conosco</a>
+                
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div class="slider">
+
+        <div class="hero-section bg-1">
+
+            <div class="container">
+
+                <h1>Lorem ipsum dolor sit amet, consectetur</h1>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nam. Nobis ipsum, dicta unde voluptas quidem ipsa voluptates ratione quo optio laudantium eius soluta dolorem esse officiis est molestiae doloribus.</p>
+
+                <a href="#" class="btn">Lorem ipsum</a>
+
+            </div>
+
+            
+
+        </div>
+
+        <div class="hero-section bg-2">
+
+            <div class="container">
+
+                <h1>Lorem ipsum dolor sit amet, consectetur</h1>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nam. Nobis ipsum, dicta unde voluptas quidem ipsa voluptates ratione quo optio laudantium eius soluta dolorem esse officiis est molestiae doloribus.</p>
+
+                <a href="#" class="btn">Lorem ipsum</a>
+
+            </div>
+
+            
+
+        </div>
+
+    </div>
+
+    <!-- Aplicando mais de uma classe ao mesmo elemento-->
+    <div class="container academia" id="academia">
+
+        <div class="image" data-aos="fade-right">
+            <img src="./img/aluno.jpg" alt="">
+
+        </div>
+
+        <div class="content" data-aos="fade-up">
+            <h2>Nossa Academia</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque corporis voluptate exercitationem incidunt quod asperiores reprehenderit quasi dicta soluta non!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus explicabo, beatae illo, architecto accusantium sint, amet deleniti minus accusamus atque qui.</p>
+
+        </div>
+
+
+    </div>
+
+    <div class="faca-parte">
+
+        <div class="container">
+
+            <div class="content">
+                <h2>Faça parte do time</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, voluptates rerum aliquid et quo modi id in ipsa, sit atque, doloribus accusantium quos omnis consequatur quisquam nostrum impedit ut? Nostrum adipisci quam, asperiores, ducimus architecto voluptatem ea quidem molestias consequuntur nisi, natus deserunt libero voluptate!</p>
+            </div>
+            
+            <div class="image">
+                <img src="img/atleta.png" alt="">
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="planos" id="planos">
+
+        <div class="container">
+
+            <div class="content">
+                <h2>Nossos Planos</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti atque reiciendis ab soluta porro dignissimos in incidunt sit! Qui sunt error esse cupiditate molestiae laborum. Incidunt minus, repudiandae assumenda ex voluptas expedita magni sed et!</p>
+            </div>
+
+            <!-- Flex Container -->
+            <div class="flex-cards">
+                <div class="card"  data-aos="fade-up">
+                    <h3>Plano Mensal</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam tempore similique vero cumque.</p>
+                    <span class="price">R$64,90</span>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing</li>
+                        <li>Lorem, ipsum dolor</li>
+                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit</li>
+                        <li>Lorem, ipsum</li>
+                    </ul>
+
+                    <a href="#" class="btn btn-outline">Lorem Ipsum</a>
+                </div>
+
+                <div class="card destaque"  data-aos="fade-up"  data-aos-delay="300">
+                    <h3>Plano Anual</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam tempore similique vero cumque.</p>
+                    <span class="price">R$49,90</span>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing</li>
+                        <li>Lorem, ipsum dolor</li>
+                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit</li>
+                        <li>Lorem, ipsum</li>
+                    </ul>
+
+                    <a href="#" class="btn">Lorem Ipsum</a>
+                </div>
+                <div class="card"  data-aos="fade-up"  data-aos-delay="600">
+                    <h3>Plano Semestral</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam tempore similique vero cumque.</p>
+                    <span class="price">R$54,90</span>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing</li>
+                        <li>Lorem, ipsum dolor</li>
+                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit</li>
+                        <li>Lorem, ipsum</li>
+                    </ul>
+
+                    <a href="#" class="btn btn-outline">Lorem Ipsum</a>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <div class="container fale-conosco" id="contato">
+
+        <div class="content" data-aos="fade-right">
+            <h2>Fale com a Hard Core</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus molestias quidem facere doloremque voluptates debitis laborum necessitatibus, eos sed fugiat.</p>
+
+            <form action="enviar.php">
+
+                <input type="text" placeholder="Digite seu nome" required minlength="3">
+                <input type="email" placeholder="Digite seu email" required>
+                <input type="text" placeholder="Digite seu telefone" required minlength="10" maxlength="150">
+
+                <textarea placeholder="Digite sua mensagem" required></textarea>
+
+                <button class="btn btn-outline">Lorem Ipsum</button>
+                
+            </form>
+        </div>
+
+        <div class="map" data-aos="fade-up"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.1442950048136!2d-43.17916182544834!3d-22.90804803791462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f605d2bf5a7%3A0x77abb5d9db59f2c0!2sAv.%20Rio%20Branco%2C%20190%20-%20Centro%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2020040-003!5e0!3m2!1spt-BR!2sbr!4v1716989733698!5m2!1spt-BR!2sbr" width="558" height="510" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+
+    </div>
+
+    <div class="container">
+        <div class="footer">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, neque. Culpa ex repudiandae sunt, obcaecati provident omnis. Ratione soluta corporis deserunt cum quas eaque optio unde laboriosam.</p>
+        </div>
+    </div>
+
+    <div class="social">
+
+        <a href="https://x.com"><img src="img/twitter.svg" alt=""></a>
+        <a href="https://youtube.com"><img src="img/youtube.svg" alt=""></a>
+        <a href="https://facebook.com"><img src="img/facebook.svg" alt=""></a>
+        
+
+    </div>
+
+    <script src="js/script.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            offset: -520
+        });
+      </script>
+
+</body>
+</html>
